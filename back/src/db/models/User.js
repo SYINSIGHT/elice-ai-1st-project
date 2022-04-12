@@ -35,7 +35,7 @@ class User {
   }
 
   static delete = async ({ id }) => {
-    const result = await UserModel.remove({ id });
+    const result = await UserModel.deleteOne({ id });
     return result;
   };
 }
